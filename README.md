@@ -2,7 +2,7 @@
 
 Simple notes app build with Tauri and React.JS
 
-<img src="" alt="banner" />
+<img src="https://github.com/fer1s/ferisNotes-v2/blob/main/previews/banner.png" alt="banner" />
 
 ## Run
 
