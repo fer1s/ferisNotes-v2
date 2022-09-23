@@ -1,0 +1,146 @@
+.modal-bg {
+   z-index: 100;
+   background-color: rgba(0, 0, 0, 0.001);
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   backdrop-filter: blur(5px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   overflow: hidden !important;
+}
+
+.modal-bg input {
+   padding: 13px 20px !important;
+   background-color: #1d1d1d;
+   border: 1px solid #2e2e2e;
+   box-shadow: none;
+   font-size: 16px;
+   text-align: center;
+   width: 50%;
+}
+
+.modal-bg p.error {
+   color: #ee3427;
+   margin-bottom: 5px;
+}
+
+.modal-select {
+   width: 50%;
+   max-height: 400px;
+   background-color: #1d1d1d;
+   border: 1px solid #2e2e2e;
+   border-radius: 8px;
+   margin-bottom: 10px;
+   padding: 10px;
+   overflow-y: auto;
+   overflow-x: hidden;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex-direction: column;
+}
+
+.modal-select .note-item {
+   display: flex;
+   width: 100%;
+   flex-direction: row;
+   align-items: center;
+}
+
+.modal-select .note-item .open {
+   background-color: #0f0f0fa1;
+   border: 1px solid #2e2e2e;
+   border-radius: 5px 0 0 5px;
+   border-right: none;
+   width: 90%;
+   text-align: center;
+   padding: 8px;
+   margin-bottom: 5px;
+   cursor: pointer;
+   font-weight: 400;
+   font-size: 14px;
+   color: rgb(146, 146, 146);
+   transition: 0.4s;
+}
+
+.modal-select .note-item .delete {
+   background-color: #0f0f0fa1;
+   border: 1px solid #2e2e2e;
+   border-radius: 0 5px 5px 0;
+   width: 10%;
+   text-align: center;
+   padding: 7px;
+   margin-bottom: 5px;
+   cursor: pointer;
+   font-weight: 400;
+   font-size: 14px;
+   color: rgb(146, 146, 146);
+   transition: 0.4s;
+}
+
+.modal-select .note-item:last-child {
+   margin-bottom: 0;
+}
+.modal-select .note-item .open:hover {
+   scale: 1.01;
+   border: 1px solid #55db55;
+   color: #fff;
+}
+.modal-select .note-item .delete:hover {
+   border: 1px solid #f14242;
+   color: #fff;
+}
+
+@media screen and (max-width: 650px) {
+   .modal-select,
+   .modal-bg input {
+      width: 90%;
+   }
+}
+
+.settings-modal {
+   width: 60%;
+   min-height: 100px;
+   background-color: #1d1d1d;
+   border: 1px solid #2e2e2e;
+   border-radius: 8px;
+   z-index: 101;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+
+.settings-modal h1 {
+   margin-bottom: 15px;
+   font-size: 30px;
+}
+
+.settings-modal code {
+   background-color: #0000006c;
+   color: #808080;
+   padding: 3px 6px;
+   border-radius: 5px;
+}
+
+.settings-modal p {
+    margin: 2px 0;
+}
+
+.settings-modal section {
+    margin-bottom: 40px;
+}
+.settings-modal section:last-child {
+    margin-bottom: 0;
+}
+
+input[type=checkbox] {
+   width: auto;
+   margin-right: 7px;
+}
