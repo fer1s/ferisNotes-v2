@@ -6,6 +6,8 @@ Simple notes app build with Tauri and React.JS
 
 ## Run
 
+### Dev
+
 Firstly install dependencies
 ```bash
 $ yarn
@@ -15,6 +17,10 @@ Next run in dev mode
 ```bash
 $ yarn tauri dev
 ```
+
+### Release
+
+Download `msi` from Releases tab and install locally.
 
 ## Informations
 
